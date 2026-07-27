@@ -203,7 +203,7 @@ function Problem() {
     {
       k: "STEP 04",
       title: "Ofgem audit",
-      body: "Fragmented, retrospective evidence fails scrutiny. Credits discounted, invalidated or rejected — 20–35% ROI lost.",
+      body: "Fragmented, retrospective evidence fails scrutiny. Credits discounted, invalidated or rejected — projected 20–35% ROI lost.",
     },
   ];
   return (
@@ -215,8 +215,8 @@ function Problem() {
           lost between the boiler room and the boardroom.
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
-          70% of UK biomass operators aggregate fuel-quality data manually. Teams spend 4–6 hours
-          per site per week on documentation. 72% feel their evidence trail is vulnerable to
+          Based on pre-launch market research, an estimated 70% of UK biomass operators aggregate fuel-quality data manually. Teams are estimated to spend 4–6 hours
+          per site per week on documentation. In market modelling, 72% feel their evidence trail is vulnerable to
           verifier scrutiny. Industry-wide, this is a multi-million pound "verification tax".
         </p>
 
@@ -278,6 +278,25 @@ function Solution() {
     </section>
   );
 }
+
+/* ------------------------------ ENDORSEMENTS (PENDING) ------------------------------ */
+/*
+function Endorsements() {
+  return (
+    <section id="endorsements" className="py-24 border-t border-border/50">
+      <div className="container-page">
+        <span className="chip">Recognised and Supported</span>
+        <h2 className="mt-4 text-4xl md:text-5xl font-bold max-w-4xl">
+          Backed by <span className="text-gradient-ember">scientific and governance</span> leaders.
+        </h2>
+        <p className="mt-5 text-muted-foreground max-w-3xl leading-relaxed">
+          BioFuel Integrity Twin's innovation and market approach are supported by letters from senior figures in science, environmental governance, and carbon markets, including Dr. Raghunath Anant Mashelkar FRS (Padma Vibhushan; former Director General, CSIR India; Fellow of the Royal Society) and Prof. James Palmer (Senior Lecturer in Environmental Governance, University of Bristol).
+        </p>
+      </div>
+    </section>
+  );
+}
+*/
 
 /* ------------------------------ MODULES ------------------------------ */
 function Modules() {
@@ -398,17 +417,17 @@ function Technology() {
           <div className="surface-panel p-6">
             <div className="text-xs uppercase tracking-widest text-muted-foreground">Audit prep</div>
             <div className="mt-2 text-4xl font-bold text-gradient-ember">40–50%</div>
-            <div className="mt-1 text-sm text-muted-foreground">reduction in audit preparation time (pilot).</div>
+            <div className="mt-1 text-sm text-muted-foreground">projected reduction in audit preparation time, based on modelled workflow analysis.</div>
           </div>
           <div className="surface-panel p-6">
             <div className="text-xs uppercase tracking-widest text-muted-foreground">Credit defensibility</div>
             <div className="mt-2 text-4xl font-bold text-gradient-ember">+25%</div>
-            <div className="mt-1 text-sm text-muted-foreground">average increase in documentation completeness.</div>
+            <div className="mt-1 text-sm text-muted-foreground">modelled average increase in documentation completeness.</div>
           </div>
           <div className="surface-panel p-6">
             <div className="text-xs uppercase tracking-widest text-muted-foreground">Boiler efficiency</div>
             <div className="mt-2 text-4xl font-bold text-gradient-ember">+12%</div>
-            <div className="mt-1 text-sm text-muted-foreground">improvement via predictive moisture alerts.</div>
+            <div className="mt-1 text-sm text-muted-foreground">estimated improvement via predictive moisture alerts.</div>
           </div>
         </div>
 
@@ -486,11 +505,11 @@ function EvidencePack() {
 /* ------------------------------ IMPACT ------------------------------ */
 function Impact() {
   const impacts = [
-    { v: "30%+", l: "Improvement in operational efficiency" },
-    { v: "25%+", l: "Reduction in quality claims & rejections" },
-    { v: "20%+", l: "Lower compliance & audit overhead" },
-    { v: "15%+", l: "Increase in validation success" },
-    { v: "10%+", l: "Reduction in audit complexity" },
+    { v: "30%+", l: "Modelled improvement in operational efficiency" },
+    { v: "25%+", l: "Projected reduction in quality claims & rejections" },
+    { v: "20%+", l: "Estimated lower compliance & audit overhead" },
+    { v: "15%+", l: "Projected increase in validation success" },
+    { v: "10%+", l: "Modelled reduction in audit complexity" },
   ];
   return (
     <section className="py-20 border-t border-border/50 bg-gradient-to-b from-transparent via-surface/40 to-transparent">
@@ -519,17 +538,17 @@ function Impact() {
 /* ------------------------------ MARKET ------------------------------ */
 function Market() {
   const stats = [
-    { v: "88%", l: "consider a unified digital twin for fuel evidence essential" },
-    { v: "92%", l: "want automated flagging of quality-to-carbon risks pre-audit" },
-    { v: "84%", l: "requested early pilot access to the platform" },
-    { v: "72%", l: "feel their current evidence trail is vulnerable to verifier scrutiny" },
-    { v: "70%", l: "aggregate biomass fuel-quality data entirely manually" },
-    { v: "55%", l: "willing to pay £1,000–£4,000 monthly for audit-integrity assurance" },
+    { v: "88%", l: "projected to consider a unified digital twin for fuel evidence essential" },
+    { v: "92%", l: "modelled to want automated flagging of quality-to-carbon risks pre-audit" },
+    { v: "84%", l: "indicated interest in piloting a platform of this kind, in pre-launch market research modelling (186 respondents)" },
+    { v: "72%", l: "estimated to feel their current evidence trail is vulnerable to verifier scrutiny" },
+    { v: "70%", l: "projected to aggregate biomass fuel-quality data entirely manually" },
+    { v: "55%", l: "estimated willingness to pay £1,000–£4,000 monthly for audit-integrity assurance" },
   ];
   return (
     <section id="market" className="py-24 border-t border-border/50">
       <div className="container-page">
-        <span className="chip">Based on UK Industrial Biomass Market Validation Survey · 186 respondents</span>
+        <span className="chip">Based on pre-launch market research modelling · 186 respondents</span>
         <h2 className="mt-4 text-4xl md:text-5xl font-bold max-w-4xl">
           A validated, <span className="text-gradient-ember">underserved</span> industrial market.
         </h2>
@@ -563,6 +582,11 @@ function Market() {
               </div>
             );
           })}
+        </div>
+
+        <div className="mt-12 surface-panel p-6 text-sm text-muted-foreground leading-relaxed">
+          <h3 className="font-semibold text-foreground mb-2 text-base">Global Expansion Readiness</h3>
+          The India–UK Comprehensive Economic and Trade Agreement (CETA), in force since 15 July 2026, establishes a formal framework for UK–India services and digital trade — directly supporting BioFuel Integrity Twin's planned expansion into the Indian industrial biomass market, where the maturing Carbon Credit Trading Scheme (CCTS) will require operators to evidence the integrity of their carbon claims.
         </div>
       </div>
     </section>
@@ -706,7 +730,7 @@ function Pricing() {
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
           Priced deliberately below enterprise ESG platforms — designed for the operational reality
-          of UK biomass sites. 51.5% of surveyed firms indicated willingness to pay for
+          of UK biomass sites. Based on pre-launch market research, an estimated 51.5% of surveyed firms indicated willingness to pay for
           audit-integrity assurance at these price points.
         </p>
 
@@ -913,9 +937,7 @@ function Founder() {
 
         <div className="lg:col-span-3 space-y-5 text-muted-foreground leading-relaxed">
           <p>
-            Satyajit brings deep, hands-on expertise across the full carbon-credit lifecycle —
-            baseline methodology, additionality, MRV and issuance — grounded in{" "}
-            <span className="text-foreground font-medium">CDM, VCS and GCC</span> project work.
+            Satyajit brings fourteen years of experience in carbon markets and industrial energy, spanning India and the UK. At Thermax Ltd, one of India's leading energy and environment engineering companies, he developed India's first Industrial CDM Programme of Activities (PoA) — pioneering work in structuring verifiable carbon reduction programmes for industrial energy users.
           </p>
           <p>
             <span className="text-foreground font-medium">MSc Climate Change Science & Policy</span>,
@@ -924,11 +946,7 @@ function Founder() {
             the industry's "verification gap".
           </p>
           <p>
-            The BioFuel Integrity Twin concept emerged from structured engagement with 100+ UK
-            industrial biomass operators. He documented a consistent pattern:{" "}
-            <span className="text-foreground font-medium">
-              operators were making carbon claims before they had forensic evidence to defend them.
-            </span>
+            This career-long focus on the gap between claimed and evidence-supported carbon performance is the founding insight behind BioFuel Integrity Twin.
           </p>
           <div className="grid sm:grid-cols-2 gap-3 pt-4">
             {[
@@ -971,13 +989,13 @@ function CTA() {
             </div>
             <div className="flex flex-col gap-3">
               <a
-                href="mailto:founder@biofuelintegritytwin.co.uk?subject=BioFuel%20Integrity%20Twin%20%E2%80%94%20Pilot%20Enquiry"
+                href="mailto:BioFuelIntegrityTwin@outlook.com?subject=BioFuel%20Integrity%20Twin%20%E2%80%94%20Pilot%20Enquiry"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-primary to-ember text-primary-foreground px-6 py-3 font-semibold shadow-xl shadow-ember/40 hover:brightness-110 transition"
               >
                 Request Pilot Access <ArrowRight className="h-4 w-4" />
               </a>
               <a
-                href="mailto:founder@biofuelintegritytwin.co.uk?subject=BioFuel%20Integrity%20Twin%20%E2%80%94%20Investor%20Enquiry"
+                href="mailto:BioFuelIntegrityTwin@outlook.com?subject=BioFuel%20Integrity%20Twin%20%E2%80%94%20Investor%20Enquiry"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-surface/70 px-6 py-3 font-semibold hover:bg-surface transition"
               >
                 Contact the Founder
@@ -1000,12 +1018,12 @@ function Footer() {
             <Flame />
           </div>
           <span>
-            <span className="text-foreground font-semibold">BioFuel Integrity Twin</span> · UK
-            Legal Entity · 2026
+            &copy; 2026 BioFuel Integrity Twin | Bristol, United Kingdom
           </span>
         </div>
-        <div className="text-xs">
-          Measure · Model · Assure · Sustain — Turning biomass into audit-ready carbon truth.
+        <div className="flex flex-col gap-2 items-end text-xs">
+          <div>Measure · Model · Assure · Sustain — Turning biomass into audit-ready carbon truth.</div>
+          <a href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</a>
         </div>
       </div>
     </footer>

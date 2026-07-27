@@ -60,16 +60,16 @@
   --popover: oklch(0.19 0.014 60);
   --popover-foreground: oklch(0.96 0.008 80);
 
-  /* Primary: warm biomass amber/ember */
-  --primary: oklch(0.78 0.16 68);
-  --primary-foreground: oklch(0.16 0.012 60);
-  --ember: oklch(0.66 0.19 42);
-  --amber-glow: oklch(0.84 0.14 82);
+  /* Primary: corporate navy and blue palette */
+  --primary: #1F3864; /* Deep navy */
+  --primary-foreground: #FFFFFF;
+  --ember: #2E74B5; /* Mid blue mapped to 'ember' variable for existing utility classes */
+  --amber-glow: #BDD7EE; /* Light blue mapped to 'amber-glow' */
 
   /* Secondary: verified emerald (sustainability trust cue) */
-  --secondary: oklch(0.28 0.03 160);
-  --secondary-foreground: oklch(0.96 0.008 80);
-  --verified: oklch(0.72 0.16 158);
+  --secondary: #4CA64C;
+  --secondary-foreground: #FFFFFF;
+  --verified: #4CA64C;
 
   --muted: oklch(0.24 0.014 60);
   --muted-foreground: oklch(0.72 0.02 70);
@@ -81,7 +81,7 @@
 
   --border: oklch(0.32 0.014 60 / 60%);
   --input: oklch(0.28 0.014 60);
-  --ring: oklch(0.78 0.16 68);
+  --ring: #1F3864;
 }
 
 @layer base {
