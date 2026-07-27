@@ -5,9 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * BioFuel Integrity Twin — design system
- * Palette: deep charcoal + biomass amber/ember + verified emerald
- * All colors in oklch. Semantic tokens only.
+ * BioFuel Integrity Twin — Corporate Design System
+ * Palette: Deep Navy (#1F3864), Mid Blue (#2E74B5), Light Blue (#BDD7EE), Sustainability Green (#4CA64C)
  */
 
 @theme inline {
@@ -48,39 +47,43 @@
 :root {
   --radius: 0.75rem;
 
-  /* Base: deep charcoal near-black */
-  --background: oklch(0.16 0.012 60);
-  --foreground: oklch(0.96 0.008 80);
+  /* Base: light mode corporate */
+  --background: #FFFFFF;
+  --foreground: #1F3864; /* Deep Navy for primary text and headings */
 
-  --surface: oklch(0.19 0.014 60);
-  --surface-elevated: oklch(0.23 0.016 62);
+  /* Alternating sections / cards (Light Blue) */
+  --surface: #BDD7EE; 
+  --surface-elevated: #F1F5F9; 
 
-  --card: oklch(0.19 0.014 60);
-  --card-foreground: oklch(0.96 0.008 80);
-  --popover: oklch(0.19 0.014 60);
-  --popover-foreground: oklch(0.96 0.008 80);
+  --card: #BDD7EE;
+  --card-foreground: #1F3864;
+  --popover: #FFFFFF;
+  --popover-foreground: #1F3864;
 
-  /* Primary: corporate navy and blue palette */
-  --primary: #1F3864; /* Deep navy */
+  /* Primary: Deep Navy */
+  --primary: #1F3864; 
   --primary-foreground: #FFFFFF;
-  --ember: #2E74B5; /* Mid blue mapped to 'ember' variable for existing utility classes */
-  --amber-glow: #BDD7EE; /* Light blue mapped to 'amber-glow' */
+  
+  /* Secondary / Mid Blue mapped to 'ember' for utility compatibility */
+  --ember: #2E74B5; 
+  /* Light Blue mapped to 'amber-glow' */
+  --amber-glow: #BDD7EE; 
 
-  /* Secondary: verified emerald (sustainability trust cue) */
+  /* Sustainability Green */
   --secondary: #4CA64C;
   --secondary-foreground: #FFFFFF;
   --verified: #4CA64C;
 
-  --muted: oklch(0.24 0.014 60);
-  --muted-foreground: oklch(0.72 0.02 70);
-  --accent: oklch(0.28 0.02 60);
-  --accent-foreground: oklch(0.96 0.008 80);
+  --muted: #F1F5F9;
+  --muted-foreground: #2E74B5; /* Mid Blue for secondary text to keep authority */
+  --accent: #E2E8F0;
+  --accent-foreground: #1F3864;
 
-  --destructive: oklch(0.62 0.22 27);
-  --destructive-foreground: oklch(0.98 0 0);
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
 
-  --border: oklch(0.32 0.014 60 / 60%);
-  --input: oklch(0.28 0.014 60);
+  --border: #BDD7EE; /* Light Blue for borders */
+  --input: #E2E8F0;
   --ring: #1F3864;
 }
 
@@ -97,12 +100,13 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     background-image:
-      radial-gradient(ellipse 80% 50% at 50% -10%, oklch(0.78 0.16 68 / 0.10), transparent 70%),
-      radial-gradient(ellipse 60% 40% at 90% 10%, oklch(0.66 0.19 42 / 0.06), transparent 60%);
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(189, 215, 238, 0.4), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 90% 10%, rgba(46, 116, 181, 0.08), transparent 60%);
   }
   h1, h2, h3, h4 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
+    color: var(--color-primary); /* Ensure headings are Deep Navy */
   }
 }
 
@@ -116,22 +120,24 @@
 }
 
 @utility text-gradient-ember {
-  background: linear-gradient(135deg, var(--amber-glow) 0%, var(--primary) 40%, var(--ember) 100%);
+  /* Using Deep Navy and Mid Blue for gradients */
+  background: linear-gradient(135deg, var(--primary) 0%, var(--ember) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 @utility surface-panel {
-  background: linear-gradient(180deg, var(--surface) 0%, var(--background) 100%);
+  background: #FFFFFF;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
+  box-shadow: 0 4px 6px -1px rgba(31, 56, 100, 0.05), 0 2px 4px -1px rgba(31, 56, 100, 0.03);
 }
 
 @utility ember-glow {
   box-shadow:
-    0 0 0 1px oklch(0.78 0.16 68 / 0.15),
-    0 20px 60px -20px oklch(0.66 0.19 42 / 0.35);
+    0 0 0 1px rgba(46, 116, 181, 0.15),
+    0 20px 60px -20px rgba(31, 56, 100, 0.15);
 }
 
 @utility chip {
@@ -141,10 +147,10 @@
   padding: 0.375rem 0.875rem;
   border-radius: 9999px;
   border: 1px solid var(--color-border);
-  background: oklch(0.19 0.014 60 / 0.6);
+  background: var(--color-surface); /* Light Blue */
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--muted-foreground);
+  color: var(--color-primary); /* Deep Navy text on Light Blue */
 }

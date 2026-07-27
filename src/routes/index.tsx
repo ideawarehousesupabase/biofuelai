@@ -65,7 +65,7 @@ function Nav() {
     { href: "#founder", label: "Founder" },
   ];
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/60">
+    <header className="sticky top-0 z-50 backdrop-blur-md bg-primary/95 border-b border-primary/20 text-primary-foreground">
       <div className="w-full max-w-[100rem] mx-auto px-6 md:px-12 flex items-center justify-between h-16">
         <a href="#top" className="flex items-center gap-3">
           <div className="relative h-9 w-9 rounded-xl bg-gradient-to-br from-amber-glow to-ember flex items-center justify-center shadow-lg shadow-ember/30">
@@ -75,16 +75,16 @@ function Nav() {
             <span className="font-bold text-base tracking-tight">BioFuel Integrity Twin</span>
           </div>
         </a>
-        <nav className="hidden lg:flex items-center gap-7 text-sm text-muted-foreground">
+        <nav className="hidden lg:flex items-center gap-7 text-sm text-primary-foreground/70">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="hover:text-foreground transition-colors">
+            <a key={l.href} href={l.href} className="hover:text-primary-foreground transition-colors">
               {l.label}
             </a>
           ))}
         </nav>
         <a
           href="#cta"
-          className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-primary to-ember text-primary-foreground px-3 py-1.5 text-xs font-semibold shadow-lg shadow-ember/30 hover:brightness-110 transition"
+          className="inline-flex items-center gap-1.5 rounded-full bg-verified text-primary-foreground px-3 py-1.5 text-xs font-semibold shadow-lg hover:brightness-110 transition"
         >
           Request pilot <ArrowRight className="h-3 w-3" />
         </a>
@@ -123,7 +123,7 @@ function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#cta"
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-ember text-primary-foreground px-6 py-3 font-semibold shadow-xl shadow-ember/40 hover:brightness-110 transition"
+              className="inline-flex items-center gap-2 rounded-full bg-verified text-primary-foreground px-6 py-3 font-semibold shadow-xl hover:brightness-110 transition"
             >
               Request Pilot Access <ArrowRight className="h-4 w-4" />
             </a>
@@ -741,7 +741,7 @@ function Pricing() {
               className={`surface-panel p-7 relative ${t.popular ? "ember-glow border-primary/40" : ""}`}
             >
               {t.popular && (
-                <span className="absolute -top-3 left-7 chip bg-gradient-to-r from-primary to-ember text-primary-foreground border-none">
+                <span className="absolute -top-3 left-7 chip bg-verified text-primary-foreground border-none">
                   <Sparkle className="h-3 w-3" /> Most popular
                 </span>
               )}
@@ -990,7 +990,7 @@ function CTA() {
             <div className="flex flex-col gap-3">
               <a
                 href="mailto:BioFuelIntegrityTwin@outlook.com?subject=BioFuel%20Integrity%20Twin%20%E2%80%94%20Pilot%20Enquiry"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-primary to-ember text-primary-foreground px-6 py-3 font-semibold shadow-xl shadow-ember/40 hover:brightness-110 transition"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-verified text-primary-foreground px-6 py-3 font-semibold shadow-xl hover:brightness-110 transition"
               >
                 Request Pilot Access <ArrowRight className="h-4 w-4" />
               </a>
@@ -1011,19 +1011,19 @@ function CTA() {
 /* ------------------------------ FOOTER ------------------------------ */
 function Footer() {
   return (
-    <footer className="py-10 border-t border-border/50">
-      <div className="container-page flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-muted-foreground">
+    <footer className="py-10 border-t border-border/50 bg-primary text-primary-foreground">
+      <div className="container-page flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-primary-foreground/70">
         <div className="flex items-center gap-3">
-          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-amber-glow to-ember flex items-center justify-center">
+          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-amber-glow to-ember flex items-center justify-center text-primary-foreground">
             <Flame />
           </div>
-          <span>
+          <span className="text-primary-foreground">
             &copy; 2026 BioFuel Integrity Twin | Bristol, United Kingdom
           </span>
         </div>
         <div className="flex flex-col gap-2 items-end text-xs">
           <div>Measure · Model · Assure · Sustain — Turning biomass into audit-ready carbon truth.</div>
-          <a href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</a>
+          <a href="/privacy-policy" className="hover:text-primary-foreground transition-colors">Privacy Policy</a>
         </div>
       </div>
     </footer>
