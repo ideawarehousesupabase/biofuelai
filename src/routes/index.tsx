@@ -68,8 +68,8 @@ function Nav() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-primary/95 border-b border-primary/20 text-primary-foreground">
       <div className="w-full max-w-[100rem] mx-auto px-6 md:px-12 flex items-center justify-between h-16">
         <a href="#top" className="flex items-center gap-3">
-          <div className="relative h-9 w-9 rounded-xl bg-gradient-to-br from-amber-glow to-ember flex items-center justify-center shadow-lg shadow-ember/30">
-            <Flame />
+          <div className="relative h-9 w-9 flex items-center justify-center">
+            <img src="/logo.png" alt="BioFuel Integrity Twin Logo" className="h-full w-full object-contain" />
           </div>
           <div className="flex items-baseline gap-2">
             <span className="font-bold text-base tracking-tight">BioFuel Integrity Twin</span>
@@ -1014,8 +1014,8 @@ function Footer() {
     <footer className="py-10 border-t border-border/50 bg-primary text-primary-foreground">
       <div className="container-page flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-primary-foreground/70">
         <div className="flex items-center gap-3">
-          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-amber-glow to-ember flex items-center justify-center text-primary-foreground">
-            <Flame />
+          <div className="h-8 w-8 flex items-center justify-center text-primary-foreground">
+            <img src="/logo.png" alt="BioFuel Integrity Twin Logo" className="h-full w-full object-contain" />
           </div>
           <span className="text-primary-foreground">
             &copy; 2026 BioFuel Integrity Twin | Bristol, United Kingdom
