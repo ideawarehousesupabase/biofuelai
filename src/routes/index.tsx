@@ -1018,7 +1018,7 @@ function Footer() {
             <img src="/logo.png" alt="BioFuel Integrity Twin Logo" className="h-full w-full object-contain" />
           </div>
           <span className="text-primary-foreground">
-            &copy; 2026 BioFuel Integrity Twin | Bristol, United Kingdom
+            &copy; 2026 BioFuel Integrity Twin Ltd | Registered in England &amp; Wales, Company No. 17366215 | The Old Chapel, 16 Oakfield Road, Clifton, Bristol BS8 2AP.
           </span>
         </div>
         <div className="flex flex-col gap-2 items-end text-xs">
