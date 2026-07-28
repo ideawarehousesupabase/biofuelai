@@ -23,6 +23,8 @@ import {
   Gauge,
 } from "lucide-react";
 
+const WTP_PERCENTAGE = "55%";
+
 export const Route = createFileRoute("/")({
   component: LandingPage,
 });
@@ -155,16 +157,16 @@ function Hero() {
           <div className="absolute -bottom-6 -left-6 surface-panel p-4 w-64 hidden md:block">
             <div className="flex items-center justify-between text-[11px] uppercase tracking-wider text-muted-foreground">
               <span>Carbon Defensibility</span>
-              <span className="inline-flex items-center gap-1 text-verified">
-                <ShieldCheck className="h-3 w-3" /> VERIFIED
-              </span>
             </div>
             <div className="mt-2 flex items-baseline gap-2">
               <span className="text-4xl font-bold text-gradient-ember">94</span>
               <span className="text-sm text-muted-foreground">/100</span>
             </div>
             <div className="mt-1 text-xs text-muted-foreground">
-              Batch BFT-2026-01847 · Humberside operator
+              Batch BFT-2026-01847 · Example Biomass Operator Ltd (Illustrative)
+            </div>
+            <div className="mt-4 text-[10px] text-muted-foreground italic border-t border-border/40 pt-2">
+              Illustrative product mock-up. BioFuel Integrity Twin is pre-launch; no client data is shown.
             </div>
           </div>
         </div>
@@ -234,12 +236,17 @@ function Problem() {
         </div>
 
         <div className="mt-10 surface-panel p-6 flex flex-wrap items-center gap-4 text-sm">
-          <AlertTriangle className="h-5 w-5 text-ember" />
-          <span className="text-foreground">
-            National Audit Office: regulators lack the forensic tools to verify biomass operator
-            claims — currently, operators are effectively{" "}
-            <span className="text-primary font-medium">"marking their own homework"</span>.
-          </span>
+          <AlertTriangle className="h-5 w-5 text-ember shrink-0" />
+          <div className="text-foreground flex-1">
+            <p>
+              National Audit Office: regulators lack the forensic tools to verify biomass operator
+              claims — currently, operators are effectively{" "}
+              <span className="text-primary font-medium">"marking their own homework"</span>.
+            </p>
+            <p className="mt-2 text-xs text-muted-foreground italic">
+              Source: National Audit Office (NAO), "The government's support for biomass," January 2024.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -453,11 +460,11 @@ function Technology() {
 function EvidencePack() {
   const rows = [
     ["Batch Summary", "BFT-2026-01847 · 128t wood pellets"],
-    ["Operator", "Humberside District Heating Ltd"],
+    ["Operator", "Example Biomass Operator Ltd (Illustrative)"],
     ["Fuel DNA", "Moisture 8.2% · GCV 18.4 MJ/kg · Ash 1.1%"],
     ["Supplier Trace", "3 tier-1 suppliers · full chain-of-custody"],
     ["Carbon Reduction Claim", "412 tCO₂e · methodology GCC-Bio"],
-    ["Defensibility Score", "94 / 100 · Verified"],
+    ["Defensibility Score", "94 / 100"],
     ["Findings", "1 predictive moisture alert · resolved"],
     ["Signed", "BioFuel Integrity Twin · Ref BFT-2026-00184"],
   ];
@@ -483,11 +490,10 @@ function EvidencePack() {
         <div className="lg:col-span-3 surface-panel p-6 ember-glow">
           <div className="flex items-center justify-between text-xs uppercase tracking-widest text-muted-foreground">
             <span>Evidence Pack · BFT-2026-01847</span>
-            <span className="inline-flex items-center gap-1 text-verified font-semibold">
-              <ShieldCheck className="h-3.5 w-3.5" /> AUDIT READY
-            </span>
           </div>
-          <div className="mt-4 text-xs text-muted-foreground">Generated 12 Feb 2026 · 09:41 GMT</div>
+          <div className="mt-4 mb-2 text-xs text-muted-foreground italic">
+            Illustrative product mock-up. BioFuel Integrity Twin is pre-launch; no client data is shown.
+          </div>
           <div className="mt-6 divide-y divide-border/50">
             {rows.map(([k, v]) => (
               <div key={k} className="flex justify-between gap-6 py-3 text-sm">
@@ -543,7 +549,7 @@ function Market() {
     { v: "84%", l: "indicated interest in piloting a platform of this kind, in pre-launch market research modelling (186 respondents)" },
     { v: "72%", l: "estimated to feel their current evidence trail is vulnerable to verifier scrutiny" },
     { v: "70%", l: "projected to aggregate biomass fuel-quality data entirely manually" },
-    { v: "55%", l: "estimated willingness to pay £1,000–£4,000 monthly for audit-integrity assurance" },
+    { v: WTP_PERCENTAGE, l: "estimated willingness to pay £1,000–£4,000 monthly for audit-integrity assurance" },
   ];
   return (
     <section id="market" className="py-24 border-t border-border/50">
@@ -730,7 +736,7 @@ function Pricing() {
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
           Priced deliberately below enterprise ESG platforms — designed for the operational reality
-          of UK biomass sites. Based on pre-launch market research, an estimated 51.5% of surveyed firms indicated willingness to pay for
+          of UK biomass sites. Based on pre-launch market research, an estimated {WTP_PERCENTAGE} of surveyed firms indicated willingness to pay for
           audit-integrity assurance at these price points.
         </p>
 
