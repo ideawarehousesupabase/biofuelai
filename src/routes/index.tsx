@@ -1000,12 +1000,6 @@ function CTA() {
               >
                 Request Pilot Access <ArrowRight className="h-4 w-4" />
               </a>
-              <a
-                href="mailto:BioFuelIntegrityTwin@outlook.com?subject=BioFuel%20Integrity%20Twin%20%E2%80%94%20Investor%20Enquiry"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-surface/70 px-6 py-3 font-semibold hover:bg-surface transition"
-              >
-                Contact the Founder
-              </a>
             </div>
           </div>
         </div>
