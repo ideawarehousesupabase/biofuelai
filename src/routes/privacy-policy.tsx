@@ -25,14 +25,19 @@ function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-3">1. Introduction</h2>
             <p>
-              BioFuel Integrity Twin ("we", "our", or "us") is committed to protecting your privacy and ensuring your personal data is handled securely and in compliance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
+              BioFuel Integrity Twin Ltd ("we", "our", or "us") is committed to protecting your privacy and ensuring your personal data is handled securely and in compliance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-3">2. Data Controller</h2>
             <p>
-              The data controller responsible for your personal data is BioFuel Integrity Twin. If you have any questions about this privacy policy, please contact us at:{" "}
+              The data controller responsible for your personal data is <strong>BioFuel Integrity Twin Ltd</strong>. 
+              We are registered in England & Wales with company number <strong>17366215</strong>. Our registered office address is: 
+              <em>The Old Chapel, 16 Oakfield Road, Clifton, Bristol BS8 2AP</em>.
+            </p>
+            <p className="mt-2">
+              If you have any questions about this privacy policy or your data, please contact us at:{" "}
               <a href="mailto:BioFuelIntegrityTwin@outlook.com" className="text-primary hover:underline">
                 BioFuelIntegrityTwin@outlook.com
               </a>.
@@ -68,7 +73,10 @@ function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-foreground mb-3">6. Data Sharing and Security</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-3">6. Data Retention, Sharing and Security</h2>
+            <p className="mb-2">
+              We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected, including satisfying any legal, accounting, or reporting requirements.
+            </p>
             <p>
               We do not sell your personal data. Your data is stored securely and access is restricted to authorised personnel only. 
               We may share data with trusted third-party service providers (such as hosting platforms) who operate under strict data processing agreements in compliance with UK GDPR.

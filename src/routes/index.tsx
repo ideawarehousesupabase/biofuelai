@@ -235,17 +235,26 @@ function Problem() {
           ))}
         </div>
 
-        <div className="mt-10 surface-panel p-6 flex flex-wrap items-center gap-4 text-sm">
-          <AlertTriangle className="h-5 w-5 text-ember shrink-0" />
-          <div className="text-foreground flex-1">
-            <p>
-              National Audit Office: regulators lack the forensic tools to verify biomass operator
-              claims — currently, operators are effectively{" "}
-              <span className="text-primary font-medium">"marking their own homework"</span>.
-            </p>
-            <p className="mt-2 text-xs text-muted-foreground italic">
-              Source: National Audit Office (NAO), "The government's support for biomass," January 2024.
-            </p>
+        <div className="mt-10 grid md:grid-cols-2 gap-4">
+          <div className="surface-panel p-6 flex items-start gap-4 text-sm">
+            <AlertTriangle className="h-5 w-5 text-ember shrink-0 mt-0.5" />
+            <div className="text-foreground flex-1">
+              <p className="font-semibold text-ember mb-2">Regulatory Enforcement Action</p>
+              <p>
+                Following recent investigations into biomass supply chains, major regulatory action was taken against an operator regarding the validity of their fuel sustainability claims, highlighting the critical risk of unauditable data.
+              </p>
+            </div>
+          </div>
+          <div className="surface-panel p-6 flex items-start gap-4 text-sm">
+            <AlertTriangle className="h-5 w-5 text-ember shrink-0 mt-0.5" />
+            <div className="text-foreground flex-1">
+              <p>
+                [NAO Quote to be updated - Please provide accurate statement]
+              </p>
+              <p className="mt-2 text-xs text-muted-foreground italic">
+                Source: National Audit Office (NAO), "The government's support for biomass," January 2024.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -459,14 +468,14 @@ function Technology() {
 /* ------------------------------ EVIDENCE PACK ------------------------------ */
 function EvidencePack() {
   const rows = [
-    ["Batch Summary", "BFT-2026-01847 · 128t wood pellets"],
+    ["Batch Summary", "BFT-2026-00184 · 128t wood pellets"],
     ["Operator", "Example Biomass Operator Ltd (Illustrative)"],
     ["Fuel DNA", "Moisture 8.2% · GCV 18.4 MJ/kg · Ash 1.1%"],
     ["Supplier Trace", "3 tier-1 suppliers · full chain-of-custody"],
     ["Carbon Reduction Claim", "412 tCO₂e · methodology GCC-Bio"],
     ["Defensibility Score", "94 / 100"],
     ["Findings", "1 predictive moisture alert · resolved"],
-    ["Signed", "BioFuel Integrity Twin · Ref BFT-2026-00184"],
+    ["Signed", "BioFuel Integrity Twin Ltd · Ref BFT-2026-00184"],
   ];
   return (
     <section className="py-24 border-t border-border/50">
@@ -489,7 +498,7 @@ function EvidencePack() {
         </div>
         <div className="lg:col-span-3 surface-panel p-6 ember-glow">
           <div className="flex items-center justify-between text-xs uppercase tracking-widest text-muted-foreground">
-            <span>Evidence Pack · BFT-2026-01847</span>
+            <span>Evidence Pack · BFT-2026-00184</span>
           </div>
           <div className="mt-4 mb-2 text-xs text-muted-foreground italic">
             Illustrative product mock-up. BioFuel Integrity Twin is pre-launch; no client data is shown.
@@ -515,7 +524,7 @@ function Impact() {
     { v: "25%+", l: "Projected reduction in quality claims & rejections" },
     { v: "20%+", l: "Estimated lower compliance & audit overhead" },
     { v: "15%+", l: "Projected increase in validation success" },
-    { v: "10%+", l: "Modelled reduction in audit complexity" },
+    { v: "20+", l: "Specialist UK green jobs created" },
   ];
   return (
     <section className="py-20 border-t border-border/50 bg-gradient-to-b from-transparent via-surface/40 to-transparent">
@@ -624,7 +633,10 @@ function Competitive() {
         <h2 className="mt-4 text-4xl md:text-5xl font-bold max-w-4xl">
           Why competitors <span className="text-gradient-ember">cannot easily replicate</span> this.
         </h2>
-        <div className="mt-10 surface-panel overflow-x-auto">
+        <div className="mt-6 text-sm text-muted-foreground border-l-2 border-primary/40 pl-4 py-1 max-w-3xl">
+          UK Patent Application GB2617530.7 (filed 28 July 2026), covering all six modules, search and examination requested, supported by an independent novelty search against global competitors.
+        </div>
+        <div className="mt-8 surface-panel overflow-x-auto">
           <table className="w-full text-sm min-w-[900px]">
             <thead>
               <tr className="text-left border-b border-border/60">
@@ -924,7 +936,7 @@ function Founder() {
             SJ
           </div>
           <h2 className="mt-6 text-4xl font-bold">Satyajit Joglekar</h2>
-          <div className="mt-2 text-muted-foreground">Founder & CEO · United Kingdom</div>
+          <div className="mt-2 text-muted-foreground">Founder & CEO</div>
           <div className="mt-6 grid grid-cols-3 gap-3 text-center">
             <div className="surface-panel p-4">
               <div className="text-xl font-bold text-gradient-ember">100+</div>
@@ -943,7 +955,7 @@ function Founder() {
 
         <div className="lg:col-span-3 space-y-5 text-muted-foreground leading-relaxed">
           <p>
-            Satyajit brings fourteen years of experience in carbon markets and industrial energy, spanning India and the UK. At Thermax Ltd, one of India's leading energy and environment engineering companies, he developed India's first Industrial CDM Programme of Activities (PoA) — pioneering work in structuring verifiable carbon reduction programmes for industrial energy users.
+            Satyajit brings 14 years of experience in carbon markets and industrial energy, spanning India and the UK. At Thermax Ltd, one of India's leading energy and environment engineering companies, he developed India's first Industrial CDM Programme of Activities (PoA) — pioneering work in structuring verifiable carbon reduction programmes for industrial energy users.
           </p>
           <p>
             <span className="text-foreground font-medium">MSc Climate Change Science & Policy</span>,
@@ -1017,9 +1029,13 @@ function Footer() {
           <div className="h-8 w-8 flex items-center justify-center text-primary-foreground">
             <img src="/logo.png" alt="BioFuel Integrity Twin Logo" className="h-full w-full object-contain" />
           </div>
-          <span className="text-primary-foreground">
-            &copy; 2026 BioFuel Integrity Twin Ltd | Registered in England &amp; Wales, Company No. 17366215 | The Old Chapel, 16 Oakfield Road, Clifton, Bristol BS8 2AP.
-          </span>
+          <div className="text-primary-foreground flex flex-wrap items-center gap-x-2 gap-y-1">
+            <span>&copy; 2026 BioFuel Integrity Twin Ltd</span>
+            <span className="hidden lg:inline text-primary-foreground/50">|</span>
+            <span>Registered in England &amp; Wales, Company No. 17366215</span>
+            <span className="hidden lg:inline text-primary-foreground/50">|</span>
+            <span>The Old Chapel, 16 Oakfield Road, Clifton, Bristol BS8 2AP.</span>
+          </div>
         </div>
         <div className="flex flex-col gap-2 items-end text-xs">
           <div>Measure · Model · Assure · Sustain — Turning biomass into audit-ready carbon truth.</div>
