@@ -891,8 +891,8 @@ function Financials() {
           </div>
         </div>
 
-        <div className="mt-8 surface-panel overflow-hidden">
-          <table className="w-full text-sm">
+        <div className="mt-8 surface-panel overflow-x-auto">
+          <table className="w-full text-sm min-w-[600px]">
             <thead>
               <tr className="text-left border-b border-border/60">
                 <th className="p-4 font-semibold">Year</th>
