@@ -19,7 +19,7 @@ function PrivacyPolicy() {
         <div className="space-y-8 text-muted-foreground leading-relaxed">
           <div>
             <h1 className="text-4xl font-bold text-foreground mb-4">Privacy Policy</h1>
-            <p>Last updated: 27 July 2026</p>
+            <p>Last updated: 29 July 2026</p>
           </div>
 
           <section>

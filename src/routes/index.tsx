@@ -163,7 +163,7 @@ function Hero() {
               <span className="text-sm text-muted-foreground">/100</span>
             </div>
             <div className="mt-1 text-xs text-muted-foreground">
-              Batch BFT-2026-01847 · Example Biomass Operator Ltd (Illustrative)
+              Batch BFT-2026-00184 · Example Biomass Operator Ltd (Illustrative)
             </div>
             <div className="mt-4 text-[10px] text-muted-foreground italic border-t border-border/40 pt-2">
               Illustrative product mock-up. BioFuel Integrity Twin is pre-launch; no client data is shown.
@@ -249,10 +249,10 @@ function Problem() {
             <AlertTriangle className="h-5 w-5 text-ember shrink-0 mt-0.5" />
             <div className="text-foreground flex-1">
               <p>
-                [NAO Quote to be updated - Please provide accurate statement]
+                "The National Audit Office has found that the government cannot demonstrate whether biomass generators receiving £22 billion in public subsidies are complying with the sustainability requirements under which they are classed as carbon neutral."
               </p>
               <p className="mt-2 text-xs text-muted-foreground italic">
-                Source: National Audit Office (NAO), "The government's support for biomass," January 2024.
+                Source: National Audit Office, The government's support for biomass, January 2024.
               </p>
             </div>
           </div>
