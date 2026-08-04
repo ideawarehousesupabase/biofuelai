@@ -283,7 +283,7 @@ function Solution() {
             The proprietary{" "}
             <span className="text-foreground font-semibold">Carbon Integrity Gap Engine</span>{" "}
             deconstructs each carbon claim in real time, mapping fuel physics against Ofgem,
-            UK Biomass Strategy 2023 and voluntary registry frameworks (CDM · VCS · GCC).
+            UK Biomass Strategy 2023 and voluntary registry frameworks (CDM · Gold Standard · VCS · GCC).
           </p>
           <p>
             Operators reclaim the full financial value of every tonne burnt — no more
@@ -396,7 +396,7 @@ function Technology() {
   const stages = [
     { n: "01", t: "Evidence Ingestion", d: "LIMS · boiler meters · supplier ERPs · weather APIs — data-agnostic connectors, no hardware." },
     { n: "02", t: "Normalisation", d: "Disparate fuel formats standardised into a single batch-level physical schema." },
-    { n: "03", t: "Forensic Logic", d: "Carbon Integrity Gap Engine maps fuel physics to Ofgem, CDM, VCS, GCC frameworks." },
+    { n: "03", t: "Forensic Logic", d: "Carbon Integrity Gap Engine maps fuel physics to Ofgem, CDM, Gold Standard, VCS, GCC frameworks." },
     { n: "04", t: "Predictive Layer", d: "AI models flag storage degradation, moisture drift and combustion inefficiency." },
     { n: "05", t: "Defensibility Dashboard", d: "Real-time scores, signed evidence packs, benchmark reports for auditors and investors." },
   ];
@@ -406,7 +406,7 @@ function Technology() {
     { l: "Prediction", v: "AI/ML fuel-quality models" },
     { l: "Ledger", v: "Biomass Integrity Ledger (BIFL)" },
     { l: "Compliance", v: "Ofgem · UK ETS · UK Biomass Strategy 2023" },
-    { l: "Standards", v: "CDM · VCS · Gold Standard · GCC" },
+    { l: "Standards", v: "CDM · Gold Standard · VCS · GCC" },
     { l: "Security", v: "Encrypted evidence store · role-based access" },
     { l: "Delivery", v: "Cloud-native · API-first · multi-region" },
   ];
@@ -616,7 +616,7 @@ function Competitive() {
     ["Carbon Integrity Gap Engine", false, false, false, false, true],
     ["Predictive storage-degradation alerts", false, false, false, false, true],
     ["Ofgem / UK Biomass Strategy 2023 alignment", false, true, true, false, true],
-    ["Multi-standard mapping (CDM · VCS · GCC)", true, false, true, false, true],
+    ["Multi-standard mapping (CDM · Gold Standard · VCS · GCC)", true, false, true, false, true],
     ["Evidence-as-a-Service audit packs", false, false, false, false, true],
     ["Federated integrity benchmarking (BIFL)", false, false, false, false, true],
   ];
@@ -721,7 +721,7 @@ function Pricing() {
       unit: "/ month",
       target: "Carbon Project Developers",
       features: [
-        "Pre-verification evidence packs (CDM · VCS · GCC)",
+        "Pre-verification evidence packs (CDM · Gold Standard · VCS · GCC)",
         "Batch-to-credit forensic mapping",
         "Registry-ready audit trail",
       ],
