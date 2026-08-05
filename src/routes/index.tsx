@@ -23,7 +23,7 @@ import {
   Gauge,
 } from "lucide-react";
 
-const WTP_PERCENTAGE = "55%";
+
 
 export const Route = createFileRoute("/")({
   component: LandingPage,
@@ -140,7 +140,7 @@ function Hero() {
           <div className="mt-12 grid grid-cols-3 gap-6">
             <Stat value="£10bn+" label="UK biomass power market by 2035" />
             <Stat value="£114bn" label="Global carbon credit market (2025)" />
-            <Stat value="2,000+" label="UK target industrial sites" />
+            <Stat value="2,000–2,500" label="UK target industrial entities" />
           </div>
         </div>
 
@@ -217,7 +217,7 @@ function Problem() {
           lost between the boiler room and the boardroom.
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
-          Based on pre-launch market research, an estimated 70% of UK biomass operators aggregate fuel-quality data manually. Teams are estimated to spend 4–6 hours
+          Based on the Projected Market Validation Model, an estimated 70% of UK biomass operators aggregate fuel-quality data manually. Teams are estimated to spend 4–6 hours
           per site per week on documentation. In market modelling, 72% feel their evidence trail is vulnerable to
           verifier scrutiny. Industry-wide, this is a multi-million pound "verification tax".
         </p>
@@ -546,15 +546,14 @@ function Market() {
   const stats = [
     { v: "88%", l: "projected to consider a unified digital twin for fuel evidence essential" },
     { v: "92%", l: "modelled to want automated flagging of quality-to-carbon risks pre-audit" },
-    { v: "84%", l: "indicated interest in piloting a platform of this kind, in pre-launch market research modelling (186 respondents)" },
+    { v: "84%", l: "projected interest in piloting a platform of this kind, based on the Projected Market Validation Model (186 respondents)" },
     { v: "72%", l: "estimated to feel their current evidence trail is vulnerable to verifier scrutiny" },
     { v: "70%", l: "projected to aggregate biomass fuel-quality data entirely manually" },
-    { v: WTP_PERCENTAGE, l: "estimated willingness to pay £1,000–£4,000 monthly for audit-integrity assurance" },
   ];
   return (
     <section id="market" className="py-24 border-t border-border/50">
       <div className="container-page">
-        <span className="chip">Based on pre-launch market research modelling · 186 respondents</span>
+        <span className="chip">Based on the Projected Market Validation Model · 186 respondents</span>
         <h2 className="mt-4 text-4xl md:text-5xl font-bold max-w-4xl">
           A validated, <span className="text-gradient-ember">underserved</span> industrial market.
         </h2>
@@ -759,8 +758,10 @@ function Pricing() {
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
           Priced deliberately below enterprise ESG platforms — designed for the operational reality
-          of UK biomass sites. Based on pre-launch market research, an estimated {WTP_PERCENTAGE} of modelled firms indicated willingness to pay for
-          audit-integrity assurance at these price points.
+          of UK biomass sites.
+        </p>
+        <p className="mt-2 text-xs text-muted-foreground">
+          * All prices exclude VAT.
         </p>
 
         <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -824,10 +825,16 @@ function Roadmap() {
       m: "100 → 200+ sites",
     },
     {
-      p: "Phase 4 · Years 4–5",
+      p: "Phase 4 · Year 4",
       t: "International Scaling",
-      d: "First EU industrial-cluster pilots, then global expansion toward 500+ industrial biomass sites. Licensing and franchising with regional sustainability partners. 20+ specialist UK jobs created.",
+      d: "First EU industrial-cluster pilots, then global expansion. Licensing and franchising with regional sustainability partners.",
       m: "200 → 500+ sites",
+    },
+    {
+      p: "Phase 5 · Year 5",
+      t: "Global Expansion",
+      d: "Continued international expansion and market penetration across target regions.",
+      m: "500 → 900 sites",
     },
   ];
   return (
@@ -966,7 +973,7 @@ function Founder() {
 
         <div className="lg:col-span-3 space-y-5 text-muted-foreground leading-relaxed">
           <p>
-            Satyajit brings 14 years of experience in carbon markets and industrial energy, spanning India and the UK. At Thermax Ltd, one of India's leading energy and environment engineering companies, he developed India's first Industrial CDM Programme of Activities (PoA) — pioneering work in structuring verifiable carbon reduction programmes for industrial energy users.
+            Satyajit brings approximately 7 years of experience in carbon markets and approximately 7 years in enterprise software sales, spanning India and the UK. At Thermax Ltd, one of India's leading energy and environment engineering companies, he developed India's first Industrial CDM Programme of Activities (PoA) — pioneering work in structuring verifiable carbon reduction programmes for industrial energy users.
           </p>
           <p>
             <span className="text-foreground font-medium">MSc Climate Change Science & Policy</span>,
