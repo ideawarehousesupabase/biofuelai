@@ -235,16 +235,7 @@ function Problem() {
           ))}
         </div>
 
-        <div className="mt-10 grid md:grid-cols-2 gap-4">
-          <div className="surface-panel p-6 flex items-start gap-4 text-sm">
-            <AlertTriangle className="h-5 w-5 text-ember shrink-0 mt-0.5" />
-            <div className="text-foreground flex-1">
-              <p className="font-semibold text-ember mb-2">Regulatory Enforcement Action</p>
-              <p>
-                Following recent investigations into biomass supply chains, major regulatory action was taken against an operator regarding the validity of their fuel sustainability claims, highlighting the critical risk of unauditable data.
-              </p>
-            </div>
-          </div>
+        <div className="mt-10 grid md:grid-cols-1 gap-4 max-w-3xl mx-auto">
           <div className="surface-panel p-6 flex items-start gap-4 text-sm">
             <AlertTriangle className="h-5 w-5 text-ember shrink-0 mt-0.5" />
             <div className="text-foreground flex-1">
@@ -568,8 +559,8 @@ function Market() {
           A validated, <span className="text-gradient-ember">underserved</span> industrial market.
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
-          Structured survey findings across industrial heat users, carbon developers, energy
-          consultants and biomass suppliers, anchored by the founder's engagement with 100+ UK
+          Structured findings across industrial heat users, carbon developers, energy
+          consultants and biomass suppliers, anchored by the founder's engagement with 10 completed interviews with UK
           industrial biomass operators across Humber, Teesside, North West and Scotland clusters.
         </p>
 
@@ -634,7 +625,7 @@ function Competitive() {
           Why competitors <span className="text-gradient-ember">cannot easily replicate</span> this.
         </h2>
         <div className="mt-6 text-sm text-muted-foreground border-l-2 border-primary/40 pl-4 py-1 max-w-3xl">
-          UK Patent Application GB2617530.7 (filed 28 July 2026), covering all six modules, search and examination requested, supported by an independent novelty search against global competitors.
+          UK Patent Application GB2617530.7 (filed 28 July 2026), covering all six novel elements A to F, search and examination requested, supported by an independent novelty search against global competitors.
         </div>
         <div className="mt-8 surface-panel overflow-x-auto">
           <table className="w-full text-sm min-w-[900px]">
@@ -737,6 +728,26 @@ function Pricing() {
         "Advanced forensic reporting & audit support",
       ],
     },
+    {
+      name: "Onboarding Fee",
+      price: "£950",
+      unit: " / site (one-off)",
+      target: "All new clients",
+      features: [
+        "System integration and setup",
+        "Initial data onboarding",
+      ],
+    },
+    {
+      name: "Evidence Pack",
+      price: "£1,150",
+      unit: " / pack",
+      target: "Operators & Developers",
+      features: [
+        "Comprehensive audit-ready pack",
+        "Signed verification",
+      ],
+    },
   ];
   return (
     <section id="pricing" className="py-24 border-t border-border/50">
@@ -748,7 +759,7 @@ function Pricing() {
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
           Priced deliberately below enterprise ESG platforms — designed for the operational reality
-          of UK biomass sites. Based on pre-launch market research, an estimated {WTP_PERCENTAGE} of surveyed firms indicated willingness to pay for
+          of UK biomass sites. Based on pre-launch market research, an estimated {WTP_PERCENTAGE} of modelled firms indicated willingness to pay for
           audit-integrity assurance at these price points.
         </p>
 
@@ -861,7 +872,7 @@ function Financials() {
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
           £50k opening capital from founder equity covers MVP, methodology alignment and pilot
-          acquisition. Direct costs fall from 18% to 14% of revenue as automation compounds.
+          acquisition.
         </p>
 
         <div className="mt-10 grid lg:grid-cols-4 gap-4">
@@ -939,12 +950,12 @@ function Founder() {
           <div className="mt-2 text-muted-foreground">Founder & CEO</div>
           <div className="mt-6 grid grid-cols-3 gap-3 text-center">
             <div className="surface-panel p-4">
-              <div className="text-xl font-bold text-gradient-ember">100+</div>
-              <div className="text-[11px] text-muted-foreground mt-1">Industrial interviews</div>
+              <div className="text-xl font-bold text-gradient-ember">10</div>
+              <div className="text-[11px] text-muted-foreground mt-1">Completed interviews</div>
             </div>
             <div className="surface-panel p-4">
               <div className="text-xl font-bold text-gradient-ember">186</div>
-              <div className="text-[11px] text-muted-foreground mt-1">Survey respondents</div>
+              <div className="text-[11px] text-muted-foreground mt-1">Modelled respondents</div>
             </div>
             <div className="surface-panel p-4">
               <div className="text-xl font-bold text-gradient-ember">3</div>
