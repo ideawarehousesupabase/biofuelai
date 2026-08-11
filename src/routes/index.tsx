@@ -546,19 +546,19 @@ function Market() {
   const stats = [
     { v: "88%", l: "projected to consider a unified digital twin for fuel evidence essential" },
     { v: "92%", l: "modelled to want automated flagging of quality-to-carbon risks pre-audit" },
-    { v: "84%", l: "projected interest in piloting a platform of this kind, based on the Projected Market Validation Model (186 respondents)" },
+    { v: "84%", l: "projected interest in piloting a platform of this kind, based on the Projected Market Validation Model (186 modelled respondents)" },
     { v: "72%", l: "estimated to feel their current evidence trail is vulnerable to verifier scrutiny" },
     { v: "70%", l: "projected to aggregate biomass fuel-quality data entirely manually" },
   ];
   return (
     <section id="market" className="py-24 border-t border-border/50">
       <div className="container-page">
-        <span className="chip">Based on the Projected Market Validation Model · 186 respondents</span>
+        <span className="chip">Outputs of the company's Projected Market Validation Model — modelled and projected, not observed. Modelled respondent base of 186; no live survey has been completed.</span>
         <h2 className="mt-4 text-4xl md:text-5xl font-bold max-w-4xl">
           A validated, <span className="text-gradient-ember">underserved</span> industrial market.
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
-          Structured findings across industrial heat users, carbon developers, energy
+          Modelled findings across industrial heat users, carbon developers, energy
           consultants and biomass suppliers, anchored by the founder's engagement with 10 completed interviews with UK
           industrial biomass operators across Humber, Teesside, North West and Scotland clusters.
         </p>
