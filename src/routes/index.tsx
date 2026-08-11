@@ -184,7 +184,7 @@ function Hero() {
               className="w-full h-auto"
             />
           </div>
-          <div className="absolute -bottom-6 -left-6 surface-panel p-4 w-64 hidden md:block">
+          <div className="mt-6 md:mt-0 md:absolute md:-bottom-6 md:-left-6 surface-panel p-4 w-full md:w-64">
             <div className="flex items-center justify-between text-[11px] uppercase tracking-wider text-muted-foreground">
               <span>Carbon Defensibility</span>
             </div>
