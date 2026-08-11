@@ -865,8 +865,8 @@ function Roadmap() {
 /* ------------------------------ FINANCIALS ------------------------------ */
 function Financials() {
   const years = [
-    { y: "Year 1", theme: "Foundation & Validation", rev: "£101k", margin: "13.3%", sites: "45" },
-    { y: "Year 2", theme: "UK Scale", rev: "£437k", margin: "26.9%", sites: "100+" },
+    { y: "Year 1", theme: "Foundation & Validation", rev: "£101k", margin: "18.4%", sites: "45" },
+    { y: "Year 2", theme: "UK Scale", rev: "£437k", margin: "27.9%", sites: "100+" },
     { y: "Year 3", theme: "National + Early International", rev: "£890k", margin: "29.8%", sites: "200+" },
   ];
   return (
@@ -899,7 +899,7 @@ function Financials() {
             <div className="text-xs uppercase tracking-widest text-muted-foreground">
               Year 3 cash
             </div>
-            <div className="mt-2 text-4xl font-bold text-gradient-ember">£429k</div>
+            <div className="mt-2 text-4xl font-bold text-gradient-ember">£446k</div>
           </div>
           <div className="surface-panel p-6">
             <div className="text-xs uppercase tracking-widest text-muted-foreground">
