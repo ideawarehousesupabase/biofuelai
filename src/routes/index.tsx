@@ -895,9 +895,9 @@ function Roadmap() {
 /* ------------------------------ FINANCIALS ------------------------------ */
 function Financials() {
   const years = [
-    { y: "Year 1", theme: "Foundation & Validation", rev: "£101k", margin: "18.4%", sites: "45" },
-    { y: "Year 2", theme: "UK Scale", rev: "£437k", margin: "27.9%", sites: "100+" },
-    { y: "Year 3", theme: "National + Early International", rev: "£890k", margin: "29.8%", sites: "200+" },
+    { y: "Year 1", theme: "Foundation & Validation", rev: "£101k", margin: "4.2%", sites: "45" },
+    { y: "Year 2", theme: "UK Scale", rev: "£436k", margin: "27.9%", sites: "105" },
+    { y: "Year 3", theme: "National + Early International", rev: "£892k", margin: "29.9%", sites: "210" },
   ];
   return (
     <section className="py-24 border-t border-border/50">
@@ -905,7 +905,7 @@ function Financials() {
         <span className="chip">Financial Plan</span>
         <h2 className="mt-4 text-4xl md:text-5xl font-bold max-w-4xl">
           Lean scale.{" "}
-          <span className="text-gradient-ember">High margins.</span> Founder-funded start.
+          <span className="text-gradient-ember">Growing margins.</span> Founder-funded start.
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
           £50k opening capital from founder equity covers MVP, methodology alignment and pilot
@@ -917,19 +917,19 @@ function Financials() {
             <div className="text-xs uppercase tracking-widest text-muted-foreground">
               Year 3 revenue
             </div>
-            <div className="mt-2 text-4xl font-bold text-gradient-ember">£890k</div>
+            <div className="mt-2 text-4xl font-bold text-gradient-ember">£892k</div>
           </div>
           <div className="surface-panel p-6">
             <div className="text-xs uppercase tracking-widest text-muted-foreground">
               Year 3 net margin
             </div>
-            <div className="mt-2 text-4xl font-bold text-gradient-ember">29.8%</div>
+            <div className="mt-2 text-4xl font-bold text-gradient-ember">29.9%</div>
           </div>
           <div className="surface-panel p-6">
             <div className="text-xs uppercase tracking-widest text-muted-foreground">
               Year 3 cash
             </div>
-            <div className="mt-2 text-4xl font-bold text-gradient-ember">£446k</div>
+            <div className="mt-2 text-4xl font-bold text-gradient-ember">£451k</div>
           </div>
           <div className="surface-panel p-6">
             <div className="text-xs uppercase tracking-widest text-muted-foreground">
