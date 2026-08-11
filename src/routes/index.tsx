@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import heroImage from "@/assets/hero-biofuel.jpg";
 import {
@@ -21,6 +22,8 @@ import {
   Users2,
   Factory,
   Gauge,
+  Menu,
+  X,
 } from "lucide-react";
 
 
@@ -56,6 +59,7 @@ function LandingPage() {
 
 /* ------------------------------ NAV ------------------------------ */
 function Nav() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const links = [
     { href: "#problem", label: "Problem" },
     { href: "#solution", label: "Solution" },
@@ -84,13 +88,39 @@ function Nav() {
             </a>
           ))}
         </nav>
-        <a
-          href="#cta"
-          className="inline-flex items-center gap-1.5 rounded-full bg-verified text-primary-foreground px-3 py-1.5 text-xs font-semibold shadow-lg hover:brightness-110 transition"
-        >
-          Request pilot <ArrowRight className="h-3 w-3" />
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href="#cta"
+            className="inline-flex items-center gap-1.5 rounded-full bg-verified text-primary-foreground px-3 py-1.5 text-xs font-semibold shadow-lg hover:brightness-110 transition"
+          >
+            Request pilot <ArrowRight className="h-3 w-3" />
+          </a>
+          <button
+            className="lg:hidden p-2 -mr-2 text-primary-foreground hover:bg-primary-foreground/10 rounded-md transition-colors"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </div>
+      
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden border-t border-primary/20 bg-primary/95 px-6 py-4">
+          <nav className="flex flex-col gap-4 text-sm text-primary-foreground/80">
+            {links.map((l) => (
+              <a 
+                key={l.href} 
+                href={l.href} 
+                className="hover:text-primary-foreground transition-colors block"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {l.label}
+              </a>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
