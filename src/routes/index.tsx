@@ -973,7 +973,7 @@ function Founder() {
 
         <div className="lg:col-span-3 space-y-5 text-muted-foreground leading-relaxed">
           <p>
-            Satyajit brings approximately 7 years of experience in carbon markets and approximately 7 years in enterprise software sales, spanning India and the UK. At Thermax Ltd, one of India's leading energy and environment engineering companies, he developed India's first Industrial CDM Programme of Activities (PoA) — pioneering work in structuring verifiable carbon reduction programmes for industrial energy users.
+            Satyajit brings approximately 7 years of experience in carbon markets and approximately 7 years in enterprise software sales, spanning India and the UK. At Thermax, one of India's leading energy and environment engineering groups, he was a key member of the team that developed India's first Industrial CDM Programme of Activities (PoA) — pioneering work in structuring verifiable carbon reduction programmes for industrial energy users.
           </p>
           <p>
             <span className="text-foreground font-medium">MSc Climate Change Science & Policy</span>,
