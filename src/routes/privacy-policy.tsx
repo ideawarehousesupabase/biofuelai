@@ -19,7 +19,7 @@ function PrivacyPolicy() {
         <div className="space-y-8 text-muted-foreground leading-relaxed">
           <div>
             <h1 className="text-4xl font-bold text-foreground mb-4">Privacy Policy</h1>
-            <p>Last updated: 29 July 2026</p>
+            <p>Last updated: 19 August 2026</p>
           </div>
 
           <section>
@@ -40,7 +40,7 @@ function PrivacyPolicy() {
               If you have any questions about this privacy policy or your data, please contact us at:{" "}
               <a href="mailto:BioFuelIntegrityTwin@outlook.com" className="text-primary hover:underline">
                 BioFuelIntegrityTwin@outlook.com
-              </a>.
+              </a>. BioFuel Integrity Twin Ltd is registered with the Information Commissioner’s Office (ICO) under registration reference ZC217000.
             </p>
           </section>
 
@@ -95,7 +95,7 @@ function PrivacyPolicy() {
               <li><strong>Right to object:</strong> You can object to the processing of your data for certain purposes.</li>
             </ul>
             <p className="mt-3">
-              To exercise any of these rights, please contact us at <a href="mailto:BioFuelIntegrityTwin@outlook.com" className="text-primary hover:underline">BioFuelIntegrityTwin@outlook.com</a>. You also have the right to lodge a complaint with the Information Commissioner's Office (ICO) if you believe your data protection rights have been breached.
+              To exercise any of these rights, please contact us at <a href="mailto:BioFuelIntegrityTwin@outlook.com" className="text-primary hover:underline">BioFuelIntegrityTwin@outlook.com</a>. If you wish to make a complaint about how we have handled your personal data, please contact us at BioFuelIntegrityTwin@outlook.com. We will acknowledge your complaint within 30 days. You also have the right to escalate your complaint to the Information Commissioner’s Office (ICO) at ico.org.uk or by calling 0303 123 1113.
             </p>
           </section>
 
