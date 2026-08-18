@@ -545,7 +545,7 @@ function Impact() {
     { v: "25%+", l: "Projected reduction in quality claims & rejections" },
     { v: "20%+", l: "Estimated lower compliance & audit overhead" },
     { v: "15%+", l: "Projected increase in validation success" },
-    { v: "20+", l: "Specialist UK green jobs created" },
+    { v: "5", l: "Settled-worker qualifying roles by Year 3" },
   ];
   return (
     <section className="py-20 border-t border-border/50 bg-gradient-to-b from-transparent via-surface/40 to-transparent">
