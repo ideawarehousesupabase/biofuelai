@@ -103,15 +103,15 @@ function Nav() {
           </button>
         </div>
       </div>
-      
+
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden border-t border-primary/20 bg-primary/95 px-6 py-4">
           <nav className="flex flex-col gap-4 text-sm text-primary-foreground/80">
             {links.map((l) => (
-              <a 
-                key={l.href} 
-                href={l.href} 
+              <a
+                key={l.href}
+                href={l.href}
                 className="hover:text-primary-foreground transition-colors block"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -589,8 +589,7 @@ function Market() {
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
           Modelled findings across industrial heat users, carbon developers, energy
-          consultants and biomass suppliers, anchored by the founder's engagement with 10 completed interviews with UK
-          industrial biomass operators across Humber, Teesside, North West and Scotland clusters.
+          consultants and biomass suppliers, anchored by a structured interview programme of 10 to 15 UK industrial biomass operators across the Humber, Teesside, North West and Scotland clusters, running through Months 1 to 3.
         </p>
 
         <div className="mt-12 grid md:grid-cols-3 gap-4">
@@ -604,9 +603,9 @@ function Market() {
 
         <div className="mt-8 grid md:grid-cols-3 gap-4">
           {[
-            { i: Factory, t: "Industrial Boiler Operators", d: "~1,500 UK sites — Ofgem-regulated heat users." },
-            { i: Building2, t: "Carbon Project Developers", d: "~500 firms needing pre-verification evidence packs." },
-            { i: Users2, t: "Energy & Carbon Consultants", d: "~1,000 advisory firms managing multi-client audits." },
+            { i: Factory, t: "Industrial Boiler Operators", d: "1,100–1,350 UK sites — Ofgem-regulated heat users." },
+            { i: Building2, t: "Carbon Project Developers", d: "120–150 firms needing pre-verification evidence packs." },
+            { i: Users2, t: "Energy & Carbon Consultants", d: "200–260 advisory firms managing multi-client audits." },
           ].map((c) => {
             const Icon = c.i;
             return (
@@ -987,8 +986,8 @@ function Founder() {
           <div className="mt-2 text-muted-foreground">Founder & CEO</div>
           <div className="mt-6 grid grid-cols-3 gap-3 text-center">
             <div className="surface-panel p-4">
-              <div className="text-xl font-bold text-gradient-ember">10</div>
-              <div className="text-[11px] text-muted-foreground mt-1">Completed interviews</div>
+              <div className="text-xl font-bold text-gradient-ember">10–15</div>
+              <div className="text-[11px] text-muted-foreground mt-1">Discovery interviews, Months 1–3</div>
             </div>
             <div className="surface-panel p-4">
               <div className="text-xl font-bold text-gradient-ember">186</div>
