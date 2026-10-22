@@ -140,14 +140,14 @@ function Hero() {
       <div className="container-page grid lg:grid-cols-2 gap-14 items-center">
         <div>
           <span className="chip">
-            <span className="h-1.5 w-1.5 rounded-full bg-verified" /> CLIMATE-TECH · BIOENERGY · CARBON MRV
+            <span className="h-1.5 w-1.5 rounded-full bg-verified" /> CLIMATE-TECH · BIOENERGY · dMRV
           </span>
           <h1 className="mt-6 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.02]">
             Turn fragmented fuel evidence into{" "}
             <span className="text-gradient-ember">Audit-Ready Carbon Truth.</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            BioFuel Integrity Twin is the Digital MRV operating system for UK industrial biomass —
+            BioFuel Integrity Twin is the digital Monitoring, Reporting and Verification (dMRV) operating system for UK industrial biomass —
             closing the{" "}
             <span className="text-foreground font-medium">Carbon Integrity Gap</span> between fuel
             physics and carbon claims through forensic, explainable, audit-ready evidence.
@@ -168,9 +168,9 @@ function Hero() {
           </div>
 
           <div className="mt-12 grid grid-cols-3 gap-6">
-            <Stat value="£10bn+" label="UK biomass power market by 2035" />
-            <Stat value="£114bn" label="Global carbon credit market (2025)" />
             <Stat value="2,000–2,500" label="UK target industrial entities" />
+            <Stat value="84%" label="Modelled pilot interest" />
+            <Stat value="55%" label="Modelled willingness to pay" />
           </div>
         </div>
 
@@ -235,7 +235,7 @@ function Problem() {
     {
       k: "STEP 04",
       title: "Ofgem audit",
-      body: "Fragmented, retrospective evidence fails scrutiny. Credits discounted, invalidated or rejected — projected 20–35% ROI lost.",
+      body: "Fragmented, retrospective evidence fails scrutiny. Credits discounted, invalidated or rejected when physical proof is absent.",
     },
   ];
   return (
@@ -247,9 +247,7 @@ function Problem() {
           lost between the boiler room and the boardroom.
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
-          Based on the Projected Market Validation Model, an estimated 70% of UK biomass operators aggregate fuel-quality data manually. Teams are estimated to spend 4–6 hours
-          per site per week on documentation. In market modelling, 72% feel their evidence trail is vulnerable to
-          verifier scrutiny. Industry-wide, this is a multi-million pound "verification tax".
+          UK industrial biomass operators face mounting audit scrutiny as fuel-quality and emissions evidence remains fragmented across paper records and disparate spreadsheets. Without an unbroken physical chain of custody, evidence trails remain vulnerable to verifier scrutiny and regulatory challenge.
         </p>
 
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -302,9 +300,9 @@ function Solution() {
           </p>
           <p>
             The proprietary{" "}
-            <span className="text-foreground font-semibold">Carbon Integrity Gap Engine</span>{" "}
+            <span className="text-foreground font-semibold">Carbon Integrity Gap Calculation Engine</span>{" "}
             deconstructs each carbon claim in real time, mapping fuel physics against Ofgem,
-            UK Biomass Strategy 2023 and voluntary registry frameworks (CDM · Gold Standard · VCS · GCC).
+            UK Biomass Strategy 2023 and voluntary registry frameworks (CDM · VCS · GCC).
           </p>
           <p>
             Operators reclaim the full financial value of every tonne burnt — no more
@@ -340,52 +338,75 @@ function Modules() {
   const modules = [
     {
       icon: Fingerprint,
-      k: "MODULE 01",
+      k: "ELEMENT A",
       title: "BioFuel Integrity Twin Generation Engine",
       body: "A data-fusion engine that maps supplier records, lab certificates, transport data and boiler telemetry into an unbroken evidence chain per batch.",
     },
     {
+      icon: Layers,
+      k: "ELEMENT B",
+      title: "Multi-Layer Fuel Integrity Assessment Framework",
+      body: "A proprietary seven-layer analytical framework evaluating physical, forensic, chemical, and operational parameters across the entire fuel lifecycle.",
+    },
+    {
       icon: Gauge,
-      k: "MODULE 02",
-      title: "Carbon Integrity Gap Engine",
+      k: "ELEMENT C",
+      title: "Carbon Integrity Gap Calculation Engine",
       body: "Automatically calculates the delta between claimed carbon reductions and physically-supported outcomes — detecting moisture, storage and combustion discrepancies.",
     },
     {
-      icon: Activity,
-      k: "MODULE 03",
-      title: "Predictive Biomass Integrity Intelligence Engine",
-      body: "Forecasts fuel-quality drift against historical storage patterns — flagging moisture spikes and degradation before credit issuance is compromised.",
-    },
-    {
       icon: Boxes,
-      k: "MODULE 04",
-      title: "Supplier Traceability & Reliability Intelligence",
+      k: "ELEMENT D",
+      title: "Supplier Traceability & Reliability Intelligence System",
       body: "Turns transient supplier data into permanent traceability equity. Every fuel source scored, benchmarked and audit-mapped.",
     },
     {
-      icon: ShieldCheck,
-      k: "MODULE 05",
-      title: "Carbon Credit Defensibility Score",
-      body: "A composite 0–100 score quantifying the credibility of every carbon claim — instantly de-risking credit disputes and unlocking premium pricing.",
+      icon: Activity,
+      k: "ELEMENT E",
+      title: "Predictive Biomass Integrity Intelligence Engine",
+      body: "Forecasts fuel-quality drift against historical storage patterns — flagging moisture spikes and degradation before credit issuance is compromised.",
+      badge: "Planned – Year 3 (Release 5)",
     },
     {
-      icon: FileCheck2,
-      k: "MODULE 06",
-      title: "Evidence-as-a-Service Dashboard",
-      body: "One-click, signed evidence packs — documents, batch DNA, scores and reviewer notes — ready for Ofgem, verifiers and carbon registries.",
+      icon: ShieldCheck,
+      k: "ELEMENT F",
+      title: "Carbon Credit Defensibility & Assurance Platform",
+      body: "An end-to-end evidence assurance layer packaging batch DNA, regulatory compliance mappings, and audit-ready verification records for registries and verifiers.",
     },
   ];
+
+  const outputs = [
+    {
+      icon: Gauge,
+      n: "OUTPUT 01",
+      title: "Fuel Integrity Score",
+      desc: "A quantitative index verifying physical fuel quality, moisture compliance, and combustion consistency against contractual and regulatory specifications.",
+    },
+    {
+      icon: LineChart,
+      n: "OUTPUT 02",
+      title: "Supplier Traceability Map",
+      desc: "An unbroken chain-of-custody map linking feedstock origin, transport documentation, and delivery batches into a permanent audit trail.",
+    },
+    {
+      icon: ShieldCheck,
+      n: "OUTPUT 03",
+      title: "Carbon Credit Defensibility Score",
+      desc: "A composite 0–100 score quantifying the evidentiary credibility of every carbon claim — instantly de-risking verifier audits and protecting credit value.",
+    },
+  ];
+
   return (
     <section id="modules" className="py-24 border-t border-border/50">
       <div className="container-page">
-        <span className="chip">Product · Six integrated modules</span>
+        <span className="chip">Patent Application GB2617530.7 · Elements A–F</span>
         <h2 className="mt-4 text-4xl md:text-5xl font-bold max-w-4xl">
           From fragmented fuel logs to{" "}
           <span className="text-gradient-ember">audit-ready carbon truth.</span>
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
-          Six proprietary modules — architected around forensic fuel physics and UK regulatory
-          reality — form a single Evidence-as-a-Service layer.
+          Six proprietary patent elements — architected around forensic fuel physics and UK regulatory
+          reality — generating three definitive audit outputs.
         </p>
 
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -397,15 +418,55 @@ function Modules() {
                   <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-primary/20 to-ember/10 border border-primary/20 flex items-center justify-center">
                     <Icon className="h-5 w-5 text-primary" />
                   </div>
-                  <span className="text-[11px] tracking-[0.18em] text-muted-foreground">
-                    {m.k}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    {m.badge && (
+                      <span className="text-[10px] uppercase font-semibold tracking-wider text-ember bg-ember/10 border border-ember/20 px-2 py-0.5 rounded-full">
+                        {m.badge}
+                      </span>
+                    )}
+                    <span className="text-[11px] tracking-[0.18em] text-muted-foreground">
+                      {m.k}
+                    </span>
+                  </div>
                 </div>
                 <h3 className="mt-5 text-lg font-semibold leading-snug">{m.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{m.body}</p>
               </div>
             );
           })}
+        </div>
+
+        {/* Three System Outputs */}
+        <div className="mt-16 pt-12 border-t border-border/40">
+          <div className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
+            System Outputs · Generated Intelligence
+          </div>
+          <h3 className="mt-2 text-2xl md:text-3xl font-bold">
+            Three Core <span className="text-gradient-ember">Audit Outputs</span>
+          </h3>
+          <p className="mt-3 text-sm text-muted-foreground max-w-2xl leading-relaxed">
+            The platform synthesises Elements A through F to generate three primary audit outputs for industrial operators, verifiers, and regulators.
+          </p>
+
+          <div className="mt-8 grid md:grid-cols-3 gap-5">
+            {outputs.map((o) => {
+              const Icon = o.icon;
+              return (
+                <div key={o.n} className="surface-panel p-6 border-l-2 border-primary hover:border-primary/60 transition">
+                  <div className="flex items-center justify-between">
+                    <div className="h-10 w-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
+                      <Icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <span className="text-[11px] font-semibold tracking-wider text-primary">
+                      {o.n}
+                    </span>
+                  </div>
+                  <h4 className="mt-4 text-lg font-semibold">{o.title}</h4>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{o.desc}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
@@ -417,19 +478,19 @@ function Technology() {
   const stages = [
     { n: "01", t: "Evidence Ingestion", d: "LIMS · boiler meters · supplier ERPs · weather APIs — data-agnostic connectors, no hardware." },
     { n: "02", t: "Normalisation", d: "Disparate fuel formats standardised into a single batch-level physical schema." },
-    { n: "03", t: "Forensic Logic", d: "Carbon Integrity Gap Engine maps fuel physics to Ofgem, CDM, Gold Standard, VCS, GCC frameworks." },
-    { n: "04", t: "Predictive Layer", d: "AI models flag storage degradation, moisture drift and combustion inefficiency." },
+    { n: "03", t: "Forensic Logic", d: "Carbon Integrity Gap Calculation Engine maps fuel physics to Ofgem, CDM, VCS, GCC frameworks." },
+    { n: "04", t: "Predictive Layer (Planned – Year 3 / Release 5)", d: "AI models to forecast storage degradation, moisture drift and combustion risks (scheduled for Year 3 / Release 5)." },
     { n: "05", t: "Defensibility Dashboard", d: "Real-time scores, signed evidence packs, benchmark reports for auditors and investors." },
   ];
   const stack = [
     { l: "Ingestion", v: "LIMS · Boiler API · ERP" },
-    { l: "Logic Layer", v: "Carbon Integrity Gap Engine" },
-    { l: "Prediction", v: "AI/ML fuel-quality models" },
-    { l: "Ledger", v: "Biomass Integrity Ledger (BIFL)" },
+    { l: "Logic Layer", v: "Carbon Integrity Gap Calculation Engine" },
+    { l: "Prediction", v: "Planned – Year 3 (Release 5)" },
+    { l: "Ledger", v: "BioFuel Integrity Ledger (BIFL)" },
     { l: "Compliance", v: "Ofgem · UK ETS · UK Biomass Strategy 2023" },
-    { l: "Standards", v: "CDM · Gold Standard · VCS · GCC" },
+    { l: "Standards", v: "CDM · VCS · GCC" },
     { l: "Security", v: "Encrypted evidence store · role-based access" },
-    { l: "Delivery", v: "Cloud-native · API-first · multi-region" },
+    { l: "Delivery", v: "Cloud-native · API-first · single-region UK hosting" },
   ];
   return (
     <section id="technology" className="py-24 border-t border-border/50">
@@ -448,24 +509,6 @@ function Technology() {
               <p className="mt-2 text-xs text-muted-foreground leading-relaxed">{s.d}</p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-10 grid lg:grid-cols-3 gap-4">
-          <div className="surface-panel p-6">
-            <div className="text-xs uppercase tracking-widest text-muted-foreground">Audit prep</div>
-            <div className="mt-2 text-4xl font-bold text-gradient-ember">40–50%</div>
-            <div className="mt-1 text-sm text-muted-foreground">projected reduction in audit preparation time, based on modelled workflow analysis.</div>
-          </div>
-          <div className="surface-panel p-6">
-            <div className="text-xs uppercase tracking-widest text-muted-foreground">Credit defensibility</div>
-            <div className="mt-2 text-4xl font-bold text-gradient-ember">+25%</div>
-            <div className="mt-1 text-sm text-muted-foreground">modelled average increase in documentation completeness.</div>
-          </div>
-          <div className="surface-panel p-6">
-            <div className="text-xs uppercase tracking-widest text-muted-foreground">Boiler efficiency</div>
-            <div className="mt-2 text-4xl font-bold text-gradient-ember">+12%</div>
-            <div className="mt-1 text-sm text-muted-foreground">estimated improvement via predictive moisture alerts.</div>
-          </div>
         </div>
 
         <div className="mt-10 surface-panel p-6">
@@ -493,7 +536,7 @@ function EvidencePack() {
     ["Operator", "Example Biomass Operator Ltd (Illustrative)"],
     ["Fuel DNA", "Moisture 8.2% · GCV 18.4 MJ/kg · Ash 1.1%"],
     ["Supplier Trace", "3 tier-1 suppliers · full chain-of-custody"],
-    ["Carbon Reduction Claim", "412 tCO₂e · methodology GCC-Bio"],
+    ["Carbon Reduction Claim", "412 tCO₂e · methodology (illustrative)"],
     ["Defensibility Score", "94 / 100"],
     ["Findings", "1 predictive moisture alert · resolved"],
     ["Signed", "BioFuel Integrity Twin Ltd · Ref BFT-2026-00184"],
@@ -541,11 +584,10 @@ function EvidencePack() {
 /* ------------------------------ IMPACT ------------------------------ */
 function Impact() {
   const impacts = [
-    { v: "30%+", l: "Modelled improvement in operational efficiency" },
-    { v: "25%+", l: "Projected reduction in quality claims & rejections" },
-    { v: "20%+", l: "Estimated lower compliance & audit overhead" },
-    { v: "15%+", l: "Projected increase in validation success" },
-    { v: "5", l: "Settled-worker qualifying roles by Year 3" },
+    { v: "5", l: "Settled-worker qualifying roles by Year 3 (Month 36)" },
+    { v: "45", l: "Target active UK industrial sites in Year 1" },
+    { v: "210", l: "Target active UK industrial sites by Year 3" },
+    { v: "3", l: "Major carbon standards mapped (CDM · VCS · GCC)" },
   ];
   return (
     <section className="py-20 border-t border-border/50 bg-gradient-to-b from-transparent via-surface/40 to-transparent">
@@ -558,7 +600,7 @@ function Impact() {
             </h2>
           </div>
         </div>
-        <div className="mt-10 grid grid-cols-2 md:grid-cols-5 gap-4">
+        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
           {impacts.map((i) => (
             <div key={i.l} className="surface-panel p-6 text-center">
               <div className="text-4xl font-bold text-gradient-ember">{i.v}</div>
@@ -574,11 +616,10 @@ function Impact() {
 /* ------------------------------ MARKET ------------------------------ */
 function Market() {
   const stats = [
-    { v: "88%", l: "projected to consider a unified digital twin for fuel evidence essential" },
-    { v: "92%", l: "modelled to want automated flagging of quality-to-carbon risks pre-audit" },
     { v: "84%", l: "projected interest in piloting a platform of this kind, based on the Projected Market Validation Model (186 modelled respondents)" },
-    { v: "72%", l: "estimated to feel their current evidence trail is vulnerable to verifier scrutiny" },
-    { v: "70%", l: "projected to aggregate biomass fuel-quality data entirely manually" },
+    { v: "55%", l: "modelled willingness to pay for audit-integrity assurance at SaaS subscription price points" },
+    { v: "186", l: "modelled respondents across UK industrial biomass operators and stakeholders" },
+    { v: "2,000–2,500", l: "UK target industrial entities across boilers, project developers, and consultants" },
   ];
   return (
     <section id="market" className="py-24 border-t border-border/50">
@@ -592,10 +633,10 @@ function Market() {
           consultants and biomass suppliers, anchored by a structured interview programme of 10 to 15 UK industrial biomass operators across the Humber, Teesside, North West and Scotland clusters, running through Months 1 to 3.
         </p>
 
-        <div className="mt-12 grid md:grid-cols-3 gap-4">
+        <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {stats.map((s) => (
             <div key={s.l} className="surface-panel p-6">
-              <div className="text-5xl font-bold text-gradient-ember">{s.v}</div>
+              <div className="text-4xl md:text-5xl font-bold text-gradient-ember">{s.v}</div>
               <div className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.l}</div>
             </div>
           ))}
@@ -632,10 +673,10 @@ function Competitive() {
   // [capability, Enterprise ESG, Biomass Supply Chain / ERP, Ratings & dMRV Agencies, Traditional Fuel Labs, BioFuel Integrity Twin]
   const rows: [string, boolean, boolean, boolean, boolean, boolean][] = [
     ["Forensic fuel-physics digital twin", false, false, false, false, true],
-    ["Carbon Integrity Gap Engine", false, false, false, false, true],
+    ["Carbon Integrity Gap Calculation Engine", false, false, false, false, true],
     ["Predictive storage-degradation alerts", false, false, false, false, true],
     ["Ofgem / UK Biomass Strategy 2023 alignment", false, true, true, false, true],
-    ["Multi-standard mapping (CDM · Gold Standard · VCS · GCC)", true, false, true, false, true],
+    ["Multi-standard mapping (CDM · VCS · GCC)", true, false, true, false, true],
     ["Evidence-as-a-Service audit packs", false, false, false, false, true],
     ["Federated integrity benchmarking (BIFL)", false, false, false, false, true],
   ];
@@ -702,7 +743,7 @@ function Pricing() {
     {
       name: "Integrity Diagnostic",
       price: "£200",
-      unit: "/ site (one-off)",
+      unit: " / site / month (recurring)",
       target: "Industrial Biomass Operators",
       features: [
         "Baseline site audit + Carbon Integrity Gap analysis",
@@ -713,23 +754,23 @@ function Pricing() {
     {
       name: "SaaS Subscription",
       price: "£290",
-      unit: "/ month",
+      unit: " / site / month",
       target: "Industrial Biomass Operators",
       popular: true,
       features: [
-        "Continuous Digital MRV monitoring",
+        "Continuous dMRV monitoring",
+        "Multi-Layer Fuel Integrity Assessment (7 layers)",
         "Carbon Credit Defensibility Score",
-        "Predictive Biomass Integrity Intelligence Engine",
         "Evidence-as-a-Service dashboard",
       ],
     },
     {
       name: "Supplier Certification",
       price: "£340",
-      unit: "/ month",
+      unit: " / site / month",
       target: "Biomass suppliers & chain-of-custody partners",
       features: [
-        "Supplier Traceability & Reliability Intelligence",
+        "Supplier Traceability & Reliability Intelligence System",
         "Chain-of-custody evidence bundling",
         "BioFuel Integrity Ledger (BIFL) registration",
       ],
@@ -737,10 +778,10 @@ function Pricing() {
     {
       name: "Carbon Developer Licence",
       price: "£300",
-      unit: "/ month",
+      unit: " / site / month",
       target: "Carbon Project Developers",
       features: [
-        "Pre-verification evidence packs (CDM · Gold Standard · VCS · GCC)",
+        "Pre-verification evidence packs (CDM · VCS · GCC)",
         "Batch-to-credit forensic mapping",
         "Registry-ready audit trail",
       ],
@@ -748,7 +789,7 @@ function Pricing() {
     {
       name: "Professional Consultant Licence",
       price: "£420",
-      unit: "/ month",
+      unit: " / site / month",
       target: "Energy Consultants & assurance firms",
       features: [
         "Multi-client white-label dashboard",
@@ -1015,7 +1056,7 @@ function Founder() {
           </p>
           <div className="grid sm:grid-cols-2 gap-3 pt-4">
             {[
-              "Full carbon lifecycle: baseline → MRV → issuance",
+              "Full carbon lifecycle: baseline → dMRV → issuance",
               "UK sustainability & TCFD/ISSB fluency",
               "Biomass fuel-physics: GCV, moisture, ash",
               "Voluntary carbon market operator relationships",

@@ -80,7 +80,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Digital MRV and carbon-integrity SaaS for UK biomass operators. Verify, audit, trace and defend every tonne of feedstock with forensic evidence.",
+          "digital Monitoring, Reporting and Verification (dMRV) and carbon-integrity SaaS for UK biomass operators. Verify, audit, trace and defend every tonne of feedstock with forensic evidence.",
       },
       { name: "author", content: "BioFuel Integrity Twin" },
       { property: "og:title", content: "BioFuel Integrity Twin — Audit-Ready Carbon Truth" },
