@@ -479,7 +479,7 @@ function Technology() {
     { n: "01", t: "Evidence Ingestion", d: "LIMS · boiler meters · supplier ERPs · weather APIs — data-agnostic connectors, no hardware." },
     { n: "02", t: "Normalisation", d: "Disparate fuel formats standardised into a single batch-level physical schema." },
     { n: "03", t: "Forensic Logic", d: "Carbon Integrity Gap Calculation Engine maps fuel physics to Ofgem, CDM, Gold Standard, VCS, GCC frameworks." },
-    { n: "04", t: "Predictive Layer (Planned – from Month 38 / Year 4)", d: "AI models to forecast storage degradation, moisture drift and combustion risks (scheduled from Month 38 / Year 4)." },
+    { n: "04", t: "Predictive Layer (Planned – from Month 38 (Year 4))", d: "AI models to forecast storage degradation, moisture drift and combustion risks (scheduled from Month 38 (Year 4))." },
     { n: "05", t: "Defensibility Dashboard", d: "Real-time scores, signed evidence packs, benchmark reports for auditors and investors." },
   ];
   const stack = [
@@ -879,7 +879,7 @@ function Roadmap() {
     {
       p: "Phase 1 · Year 1",
       t: "UK Soft Launch & Validation",
-      d: "MVP delivery: BioFuel Integrity Twin Generation Engine + LIMS/boiler API connectors. Deploy diagnostics at initial UK industrial biomass sites. Validate the BioFuel Integrity Ledger (BIFL) against third-party audit outcomes. Key hire at Month 12: Customer Success Manager (onboarding & audit readiness).",
+      d: "First production release: BioFuel Integrity Twin Generation Engine + LIMS/boiler API connectors. Deploy diagnostics at initial UK industrial biomass sites. Validate the BioFuel Integrity Ledger (BIFL) against third-party audit outcomes. Key hire at Month 12: Customer Success Manager (onboarding & audit readiness).",
       m: "0 → 22 active sites",
     },
     {
@@ -898,13 +898,13 @@ function Roadmap() {
       p: "Phase 4 · Year 4",
       t: "International Scaling",
       d: "First EU industrial-cluster pilots, then global expansion. Release of Element E: Predictive Biomass Integrity Intelligence Engine (from Month 38). Licensing and franchising with regional sustainability partners.",
-      m: "141 → 500+ sites",
+      m: "141 → 500+ active sites",
     },
     {
       p: "Phase 5 · Year 5",
       t: "Global Expansion",
       d: "Continued international expansion and market penetration across target regions.",
-      m: "500 → 900 sites",
+      m: "500+ → 900+ active sites",
     },
   ];
   return (
@@ -915,7 +915,7 @@ function Roadmap() {
           From UK soft launch to{" "}
           <span className="text-gradient-ember">global bioenergy standard.</span>
         </h2>
-        <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-5 gap-4">
           {phases.map((p) => (
             <div key={p.p} className="surface-panel p-6">
               <div className="text-[11px] tracking-[0.18em] text-primary font-semibold">{p.p}</div>
@@ -948,8 +948,8 @@ function Financials() {
           <span className="text-gradient-ember">Growing margins.</span> Founder-funded start.
         </h2>
         <p className="mt-5 text-muted-foreground max-w-3xl">
-          £50k opening capital from founder equity covers MVP, methodology alignment and pilot
-          acquisition.
+          £50k opening capital from founder equity covers first production release, methodology
+          alignment and pilot acquisition.
         </p>
 
         <div className="mt-10 grid lg:grid-cols-4 gap-4">
