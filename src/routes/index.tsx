@@ -365,7 +365,7 @@ function Modules() {
       k: "ELEMENT E",
       title: "Predictive Biomass Integrity Intelligence Engine",
       body: "Forecasts fuel-quality drift against historical storage patterns — flagging moisture spikes and degradation before credit issuance is compromised.",
-      badge: "Planned – Year 3 (Release 5)",
+      badge: "Planned – from Month 38 (Year 4)",
     },
     {
       icon: ShieldCheck,
@@ -479,13 +479,13 @@ function Technology() {
     { n: "01", t: "Evidence Ingestion", d: "LIMS · boiler meters · supplier ERPs · weather APIs — data-agnostic connectors, no hardware." },
     { n: "02", t: "Normalisation", d: "Disparate fuel formats standardised into a single batch-level physical schema." },
     { n: "03", t: "Forensic Logic", d: "Carbon Integrity Gap Calculation Engine maps fuel physics to Ofgem, CDM, Gold Standard, VCS, GCC frameworks." },
-    { n: "04", t: "Predictive Layer (Planned – Year 3 / Release 5)", d: "AI models to forecast storage degradation, moisture drift and combustion risks (scheduled for Year 3 / Release 5)." },
+    { n: "04", t: "Predictive Layer (Planned – from Month 38 / Year 4)", d: "AI models to forecast storage degradation, moisture drift and combustion risks (scheduled from Month 38 / Year 4)." },
     { n: "05", t: "Defensibility Dashboard", d: "Real-time scores, signed evidence packs, benchmark reports for auditors and investors." },
   ];
   const stack = [
     { l: "Ingestion", v: "LIMS · Boiler API · ERP" },
     { l: "Logic Layer", v: "Carbon Integrity Gap Calculation Engine" },
-    { l: "Prediction", v: "Planned – Year 3 (Release 5)" },
+    { l: "Prediction", v: "Planned – from Month 38 (Year 4)" },
     { l: "Ledger", v: "BioFuel Integrity Ledger (BIFL)" },
     { l: "Compliance", v: "Ofgem · UK ETS · UK Biomass Strategy 2023" },
     { l: "Standards", v: "CDM · Gold Standard · VCS · GCC" },
@@ -584,9 +584,9 @@ function EvidencePack() {
 /* ------------------------------ IMPACT ------------------------------ */
 function Impact() {
   const impacts = [
-    { v: "5", l: "Settled-worker qualifying roles by Year 3 (Month 36)" },
-    { v: "45", l: "Target active UK industrial sites in Year 1" },
-    { v: "210", l: "Target active UK industrial sites by Year 3" },
+    { v: "5", l: "Settled-worker qualifying roles by Year 3 (UK jobs at year end: 1 / 2 / 5, excluding the founder)" },
+    { v: "22", l: "Target active UK industrial sites in Year 1" },
+    { v: "141", l: "Target active UK industrial sites by Year 3" },
     { v: "4", l: "Major carbon standards mapped (CDM · Gold Standard · VCS · GCC)" },
   ];
   return (
@@ -879,26 +879,26 @@ function Roadmap() {
     {
       p: "Phase 1 · Year 1",
       t: "UK Soft Launch & Validation",
-      d: "MVP delivery: BioFuel Integrity Twin Generation Engine + LIMS/boiler API connectors. Deploy diagnostics at 5–10 UK industrial biomass sites. Validate the BioFuel Integrity Ledger (BIFL) against third-party audit outcomes.",
-      m: "0 → 45 active sites",
+      d: "MVP delivery: BioFuel Integrity Twin Generation Engine + LIMS/boiler API connectors. Deploy diagnostics at initial UK industrial biomass sites. Validate the BioFuel Integrity Ledger (BIFL) against third-party audit outcomes. Key hire at Month 12: Customer Success Manager (onboarding & audit readiness).",
+      m: "0 → 22 active sites",
     },
     {
       p: "Phase 2 · Year 2",
       t: "Full UK Launch",
-      d: "Full SaaS rollout across 50–100 sites in Humber, Teesside and North West clusters. Plug-and-play LIMS/monitoring integration. Strategic partnerships with UK carbon verifiers and consultants.",
-      m: "45 → 100+ sites",
+      d: "Full SaaS rollout across 50–60 sites in Humber, Teesside and North West clusters. Supported by Customer Success Manager (hired Month 12) and Carbon Data Scientist. Plug-and-play LIMS/monitoring integration. Strategic partnerships with UK carbon verifiers and consultants.",
+      m: "22 → 60 active sites",
     },
     {
       p: "Phase 3 · Year 3",
       t: "National Expansion",
-      d: "National UK coverage. Automated Carbon Credit Defensibility reporting at scale. API licensing to carbon registries. Launch of the BioFuel Integrity Ledger (BIFL) network layer.",
-      m: "100 → 200+ sites",
+      d: "National UK coverage reaching 141 active sites. Automated Carbon Credit Defensibility reporting at scale. API licensing to carbon registries. Launch of the BioFuel Integrity Ledger (BIFL) network layer.",
+      m: "60 → 141 active sites",
     },
     {
       p: "Phase 4 · Year 4",
       t: "International Scaling",
-      d: "First EU industrial-cluster pilots, then global expansion. Licensing and franchising with regional sustainability partners.",
-      m: "200 → 500+ sites",
+      d: "First EU industrial-cluster pilots, then global expansion. Release of Element E: Predictive Biomass Integrity Intelligence Engine (from Month 38). Licensing and franchising with regional sustainability partners.",
+      m: "141 → 500+ sites",
     },
     {
       p: "Phase 5 · Year 5",
@@ -935,9 +935,9 @@ function Roadmap() {
 /* ------------------------------ FINANCIALS ------------------------------ */
 function Financials() {
   const years = [
-    { y: "Year 1", theme: "Foundation & Validation", rev: "£101k", margin: "4.2%", sites: "45" },
-    { y: "Year 2", theme: "UK Scale", rev: "£436k", margin: "27.9%", sites: "105" },
-    { y: "Year 3", theme: "National + Early International", rev: "£892k", margin: "29.9%", sites: "210" },
+    { y: "Year 1", theme: "Foundation & Validation", rev: "£53,785", margin: "Net loss £9,945", sites: "22" },
+    { y: "Year 2", theme: "UK Scale", rev: "£205,012", margin: "23.7%", sites: "60" },
+    { y: "Year 3", theme: "National + Early International", rev: "£450,403", margin: "22.1%", sites: "141" },
   ];
   return (
     <section className="py-24 border-t border-border/50">
@@ -957,19 +957,19 @@ function Financials() {
             <div className="text-xs uppercase tracking-widest text-muted-foreground">
               Year 3 revenue
             </div>
-            <div className="mt-2 text-4xl font-bold text-gradient-ember">£892k</div>
+            <div className="mt-2 text-4xl font-bold text-gradient-ember">£450,403</div>
           </div>
           <div className="surface-panel p-6">
             <div className="text-xs uppercase tracking-widest text-muted-foreground">
               Year 3 net margin
             </div>
-            <div className="mt-2 text-4xl font-bold text-gradient-ember">29.9%</div>
+            <div className="mt-2 text-4xl font-bold text-gradient-ember">22.1%</div>
           </div>
           <div className="surface-panel p-6">
             <div className="text-xs uppercase tracking-widest text-muted-foreground">
-              Year 3 cash
+              Year 3 closing cash
             </div>
-            <div className="mt-2 text-4xl font-bold text-gradient-ember">£451k</div>
+            <div className="mt-2 text-4xl font-bold text-gradient-ember">£197,316</div>
           </div>
           <div className="surface-panel p-6">
             <div className="text-xs uppercase tracking-widest text-muted-foreground">
@@ -1035,7 +1035,7 @@ function Founder() {
               <div className="text-[11px] text-muted-foreground mt-1">Modelled respondents</div>
             </div>
             <div className="surface-panel p-4">
-              <div className="text-xl font-bold text-gradient-ember">3</div>
+              <div className="text-xl font-bold text-gradient-ember">4</div>
               <div className="text-[11px] text-muted-foreground mt-1">Carbon frameworks</div>
             </div>
           </div>
@@ -1047,7 +1047,7 @@ function Founder() {
           </p>
           <p>
             <span className="text-foreground font-medium">MSc Climate Change Science & Policy</span>,
-            University of Bristol. Technical mastery of biomass fuel physics (GCV, moisture, ash
+            University of Bristol. Hands-on experience of biomass fuel physics (GCV, moisture, ash
             analysis) and onsite energy-efficiency monitoring — the exact skillset needed to close
             the industry's "verification gap".
           </p>
